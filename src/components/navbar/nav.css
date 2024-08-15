@@ -1,0 +1,49 @@
+.header {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 999;
+    background-color: rgba(224, 217, 217, 0.737);
+    padding: 10px;
+}
+
+.header .logo {
+    width: 40%;
+    float: left;
+}
+
+.header .logo img {
+    width: 60px;
+    height: 60px;
+}
+
+.header li {
+    display: inline-block;
+    padding: 12px;
+}
+
+.header ul {
+    width: 60%;
+    float: right;
+    text-align: right;
+}
+
+.header a {
+    color: rgb(11, 10, 10);
+    font-size: 18px;
+}
+
+.header a::after {
+    content: "";
+    width: 0;
+    height: 3px;
+    display: block;
+    background-color: #f7a238;
+    margin-top: 1px;
+    transition: .6s;
+}
+
+.header .active::after,
+.header a:hover:after {
+    width: 100%;
+}
